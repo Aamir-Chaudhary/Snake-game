@@ -153,7 +153,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         // Score text
         g.setFont(new Font("Arial", Font.BOLD, 40));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
-        String scoreText = "Rajkumar's Score: " + applesEaten;
+        String scoreText = "Score: " + applesEaten;
         g.drawString(scoreText, (SCREEN_WIDTH - metrics2.stringWidth(scoreText)) / 2, (SCREEN_HEIGHT / 2) + 80);
     }
 
@@ -202,7 +202,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Rajkumar the CEO");
+        JFrame frame = new JFrame("Snake game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.add(new SnakeGame());
