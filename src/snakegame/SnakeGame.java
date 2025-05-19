@@ -147,7 +147,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         g.setColor(Color.WHITE);
         g.setFont(new Font("Arial", Font.BOLD, 75));
         FontMetrics metrics1 = getFontMetrics(g.getFont());
-        String gameOverText = "bhay marde";
+        String gameOverText = "Game Over";
         g.drawString(gameOverText, (SCREEN_WIDTH - metrics1.stringWidth(gameOverText)) / 2, SCREEN_HEIGHT / 2);
 
         // Score text
